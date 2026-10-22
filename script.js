@@ -188,11 +188,11 @@ scrollTopBtn.addEventListener('click', () => {
    TYPING EFFECT FOR HERO
 ====================================================== */
 const typingElement = document.querySelector('.typing-text');
-const textToType = "Building The Future \n Across The Oceans";
+const textToType = typingElement ? (typingElement.getAttribute('data-type-text') || "Building The Future \n Across The Oceans") : "";
 let charIndex = 0;
 
 function typeEffect() {
-    if(!typingElement) return;
+    if(!typingElement || !textToType) return;
     
     if (charIndex < textToType.length) {
         if(textToType.charAt(charIndex) === '\n') {
@@ -201,11 +201,10 @@ function typeEffect() {
             typingElement.innerHTML += textToType.charAt(charIndex);
         }
         charIndex++;
-        setTimeout(typeEffect, 100);
+        setTimeout(typeEffect, 70);
     }
 }
 // Note: initial innerHTML of .typing-text should be empty if we want full type effect.
-// Currently it has text. I will clear it before starting.
 if(typingElement) {
     typingElement.innerHTML = '';
 }

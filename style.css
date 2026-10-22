@@ -275,6 +275,20 @@ ul {
     color: var(--secondary-color) !important;
 }
 
+.nav-link.nav-highlight {
+    background: linear-gradient(135deg, rgba(30, 136, 229, 0.25), rgba(11, 37, 69, 0.4));
+    border: 1px solid rgba(30, 136, 229, 0.5);
+    padding: 6px 14px !important;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+#navbar.scrolled .nav-link.nav-highlight {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: var(--white) !important;
+    border: none;
+}
+
 .menu-toggle {
     display: none;
     cursor: pointer;
