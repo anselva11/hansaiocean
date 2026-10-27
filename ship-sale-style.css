@@ -1,0 +1,1004 @@
+/* ======================================================
+   HANSAI OCEAN - SHIP SALE & PURCHASE (JUAL BELI KAPAL)
+   DEDICATED STYLESHEET
+====================================================== */
+
+:root {
+    --gold-accent: #f59e0b;
+    --gold-hover: #d97706;
+    --emerald-green: #10b981;
+    --wa-green: #25d366;
+    --wa-green-hover: #20ba5a;
+    --email-blue: #0284c7;
+    --email-blue-hover: #0369a1;
+    --navy-dark: #07192f;
+    --card-border: rgba(226, 232, 240, 0.8);
+    --badge-bg: rgba(30, 136, 229, 0.1);
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+.breadcrumb a {
+    color: var(--white);
+    opacity: 0.8;
+    transition: var(--transition);
+}
+.breadcrumb a:hover {
+    opacity: 1;
+    color: #90caf9;
+    text-decoration: underline;
+}
+.breadcrumb .separator {
+    opacity: 0.5;
+}
+.breadcrumb .current {
+    color: #90caf9;
+    font-weight: 600;
+}
+
+/* Nav Link Highlight Badge */
+.nav-highlight {
+    background: linear-gradient(135deg, rgba(30, 136, 229, 0.25), rgba(11, 37, 69, 0.4));
+    border: 1px solid rgba(30, 136, 229, 0.5);
+    padding: 6px 14px !important;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.nav-highlight-gold {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(11, 37, 69, 0.5));
+    border: 1px solid rgba(245, 158, 11, 0.6);
+    padding: 6px 14px !important;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #fef3c7 !important;
+}
+#navbar.scrolled .nav-highlight-gold {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #ffffff !important;
+    border: none;
+}
+
+/* Floating WhatsApp Button */
+.floating-wa-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    z-index: 999;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+}
+.floating-wa-btn:hover {
+    transform: scale(1.1) translateY(-4px);
+    box-shadow: 0 15px 35px rgba(37, 211, 102, 0.6);
+}
+.floating-wa-tooltip {
+    position: absolute;
+    right: 75px;
+    background: var(--navy-dark);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+.floating-wa-btn:hover .floating-wa-tooltip {
+    opacity: 1;
+    transform: translateX(-5px);
+}
+.wa-pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(37, 211, 102, 0.4);
+    animation: waPulseAnim 2s infinite;
+    z-index: -1;
+}
+@keyframes waPulseAnim {
+    0% { transform: scale(1); opacity: 0.8; }
+    70% { transform: scale(1.6); opacity: 0; }
+    100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Ship Hero Section */
+.ship-hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+.ship-hero .hero-bg {
+    filter: brightness(0.65) saturate(1.1);
+}
+.ship-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(245, 158, 11, 0.15);
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 7px 20px;
+    border-radius: 30px;
+    color: #fef3c7;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+.pulse-dot-gold {
+    width: 9px;
+    height: 9px;
+    background-color: var(--gold-accent);
+    border-radius: 50%;
+    box-shadow: 0 0 12px var(--gold-accent);
+    animation: pulseGlowGold 1.5s infinite;
+}
+@keyframes pulseGlowGold {
+    0% { transform: scale(0.9); opacity: 0.8; }
+    50% { transform: scale(1.3); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.8; }
+}
+
+.ship-hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.8rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.ship-stat-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    transition: var(--transition);
+}
+.ship-stat-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-3px);
+}
+.ship-stat-card h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+    font-weight: 800;
+}
+.ship-stat-card p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+/* Search and Filter Section */
+.catalog-controls {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 20px 45px rgba(11, 37, 69, 0.1);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+}
+.search-bar-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.search-input-box {
+    flex: 1;
+    position: relative;
+}
+.search-input-box svg {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+}
+.search-input-box input {
+    width: 100%;
+    padding: 14px 18px 14px 50px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: var(--transition);
+    outline: none;
+    background: #f8fafc;
+}
+.search-input-box input:focus {
+    border-color: var(--secondary-color);
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(30, 136, 229, 0.12);
+}
+.sort-select-box {
+    min-width: 200px;
+}
+.sort-select-box select {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background: #f8fafc;
+    color: var(--primary-color);
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.sort-select-box select:focus {
+    border-color: var(--secondary-color);
+    background: #ffffff;
+}
+
+/* Category Filter Chips */
+.category-filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.filter-chip {
+    background: #f1f5f9;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.filter-chip:hover {
+    background: #e2e8f0;
+    color: var(--primary-color);
+}
+.filter-chip.active {
+    background: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(11, 37, 69, 0.25);
+}
+.filter-chip .chip-count {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+}
+.filter-chip.active .chip-count {
+    background: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+}
+
+/* Ships Grid */
+.ships-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+.ship-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--card-border);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+.ship-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 45px rgba(11, 37, 69, 0.15);
+    border-color: rgba(30, 136, 229, 0.4);
+}
+.ship-card-image-wrapper {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+    background: #0f172a;
+}
+.ship-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.ship-card:hover .ship-card-image {
+    transform: scale(1.08);
+}
+.ship-badge-floating {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(11, 37, 69, 0.88);
+    backdrop-filter: blur(6px);
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.ship-status-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: #10b981;
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.35);
+}
+.ship-card-overlay-hint {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 14px;
+    background: linear-gradient(transparent, rgba(11, 37, 69, 0.9));
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.9;
+    transition: var(--transition);
+}
+.ship-card:hover .ship-card-overlay-hint {
+    opacity: 1;
+    background: linear-gradient(transparent, rgba(11, 37, 69, 0.95));
+}
+
+.ship-card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.ship-type-tag {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.4rem;
+}
+.ship-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    line-height: 1.35;
+}
+.ship-specs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #edf2f7;
+}
+.spec-item {
+    display: flex;
+    flex-direction: column;
+}
+.spec-label {
+    font-size: 0.75rem;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.spec-val {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ship-location-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #475569;
+    font-size: 0.85rem;
+    margin-bottom: 1.25rem;
+}
+.ship-location-row svg {
+    color: var(--secondary-color);
+    flex-shrink: 0;
+}
+.ship-card-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.ship-price-hint {
+    display: flex;
+    flex-direction: column;
+}
+.ship-price-hint span:first-child {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+.ship-price-hint .price-value {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+.btn-view-details {
+    padding: 8px 16px;
+    font-size: 0.88rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Modal Details Popup */
+.ship-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 25, 47, 0.75);
+    backdrop-filter: blur(8px);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: 1.5rem;
+}
+.ship-modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+.ship-modal-window {
+    background: #ffffff;
+    border-radius: 20px;
+    max-width: 960px;
+    width: 100%;
+    max-height: 90vh;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+    position: relative;
+    transform: translateY(30px) scale(0.98);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.ship-modal-overlay.show .ship-modal-window {
+    transform: translateY(0) scale(1);
+}
+.ship-modal-header {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.modal-title-group h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+.modal-title-group .sub-meta {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 4px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.ship-modal-close-btn {
+    background: #f1f5f9;
+    border: none;
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+.ship-modal-close-btn:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+    transform: rotate(90deg);
+}
+
+.ship-modal-scrollable-body {
+    padding: 2rem;
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* Modal Content Grid */
+.modal-top-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.modal-ship-image-box {
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    height: 290px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.modal-ship-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.modal-quick-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.summary-spec-badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+.modal-badge {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.badge-blue {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+.badge-green {
+    background: #dcfce7;
+    color: #15803d;
+}
+.badge-amber {
+    background: #fef3c7;
+    color: #b45309;
+}
+.badge-purple {
+    background: #f3e8ff;
+    color: #7e22ce;
+}
+.modal-desc-box {
+    background: #f8fafc;
+    border-left: 4px solid var(--secondary-color);
+    padding: 1rem 1.25rem;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 1.2rem;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #334155;
+}
+
+/* Quote Action Bar in Modal */
+.modal-quote-action-bar {
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.2rem;
+}
+.modal-quote-action-bar h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.quote-btn-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.btn-wa-quote {
+    background: linear-gradient(135deg, var(--wa-green), #1ea952);
+    color: #ffffff !important;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.92rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+.btn-wa-quote:hover {
+    background: linear-gradient(135deg, #1fa851, #128c7e);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(37, 211, 102, 0.45);
+}
+.btn-email-quote {
+    background: linear-gradient(135deg, var(--email-blue), #0369a1);
+    color: #ffffff !important;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.92rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+}
+.btn-email-quote:hover {
+    background: linear-gradient(135deg, #0369a1, #075985);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(2, 132, 199, 0.45);
+}
+
+/* Modal Specs Table */
+.modal-specs-section {
+    margin-top: 1.5rem;
+}
+.specs-section-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.modal-specs-table-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.spec-row-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.88rem;
+}
+.spec-row-card .row-label {
+    color: #64748b;
+    font-weight: 500;
+}
+.spec-row-card .row-value {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-align: right;
+}
+
+/* Custom Quote Form inside Modal (Collapsible or visible) */
+.custom-quote-toggle-box {
+    margin-top: 1.5rem;
+    border-top: 1px dashed #cbd5e1;
+    padding-top: 1.5rem;
+}
+.custom-quote-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+.quote-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.quote-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.quote-form-group label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #475569;
+}
+.quote-form-group input,
+.quote-form-group select,
+.quote-form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    font-family: inherit;
+    background: #ffffff;
+    outline: none;
+    transition: var(--transition);
+}
+.quote-form-group input:focus,
+.quote-form-group select:focus,
+.quote-form-group textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.15);
+}
+
+/* Sell Ship Section (Titip Jual Kapal) */
+.sell-ship-section {
+    background: linear-gradient(135deg, #07192f 0%, #0b2545 100%);
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+.sell-ship-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+.sell-ship-text h2 {
+    color: #ffffff;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+.sell-ship-text p {
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+.sell-benefit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.sell-benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.benefit-icon {
+    width: 32px;
+    height: 32px;
+    background: rgba(30, 136, 229, 0.25);
+    border: 1px solid rgba(144, 202, 249, 0.4);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #90caf9;
+    flex-shrink: 0;
+}
+.sell-benefit-item h4 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+.sell-benefit-item p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.88rem;
+    margin: 0;
+}
+
+.sell-form-card {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 20px;
+    padding: 2.5rem;
+    color: var(--text-dark);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+.sell-form-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.sell-form-card p {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* S&P Process Timeline */
+.process-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    position: relative;
+    margin-top: 3rem;
+}
+.process-step-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    border: 1px solid var(--card-border);
+    box-shadow: var(--shadow-soft);
+    position: relative;
+    transition: var(--transition);
+}
+.process-step-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--secondary-color);
+}
+.step-number {
+    position: absolute;
+    top: -18px;
+    left: 24px;
+    width: 38px;
+    height: 38px;
+    background: var(--primary-color);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(11, 37, 69, 0.3);
+}
+.step-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(30, 136, 229, 0.1);
+    color: var(--secondary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    margin-top: 0.5rem;
+}
+.process-step-card h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.6rem;
+}
+.process-step-card p {
+    font-size: 0.88rem;
+    color: #64748b;
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* Empty state */
+.empty-ships-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px dashed #cbd5e1;
+    grid-column: 1 / -1;
+}
+.empty-ships-state svg {
+    color: #94a3b8;
+    margin-bottom: 1rem;
+}
+.empty-ships-state h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+.empty-ships-state p {
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+    .ship-hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .modal-top-grid {
+        grid-template-columns: 1fr;
+    }
+    .sell-ship-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    .process-steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-bar-wrapper {
+        flex-direction: column;
+    }
+    .ships-grid {
+        grid-template-columns: 1fr;
+    }
+    .modal-specs-table-grid {
+        grid-template-columns: 1fr;
+    }
+    .quote-btn-group {
+        grid-template-columns: 1fr;
+    }
+    .quote-form-grid {
+        grid-template-columns: 1fr;
+    }
+    .ship-modal-window {
+        max-height: 95vh;
+        border-radius: 14px;
+    }
+    .ship-modal-header {
+        padding: 1.2rem;
+    }
+    .ship-modal-scrollable-body {
+        padding: 1.2rem;
+    }
+    .sell-form-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ship-hero-stats {
+        grid-template-columns: 1fr;
+    }
+    .process-steps-grid {
+        grid-template-columns: 1fr;
+    }
+    .floating-wa-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 52px;
+        height: 52px;
+    }
+}

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Jual Beli Kapal (Ship Sale & Purchase / S&P) | Hansai Ocean Industries Ltd">
+    <meta name="description"
+        content="Penyedia layanan jual beli kapal (Ship Sale & Purchase / S&P) terpercaya di Indonesia. Menyediakan Tugboat, Tongkang, Oil Tanker, LCT, Container Ship, dan AHTS bersertifikasi BKI/IACS lengkap dengan survei teknis dan fasilitas drydocking.">
+    <title>Jual Beli Kapal (Ship Sale & Purchase / S&P) | Hansai Ocean Industries Ltd</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="container-style.css">
+    <link rel="stylesheet" href="ship-sale-style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h2>HANSAI MARINE S&P</h2>
+            <p>Memuat armada kapal terbaik...</p>
+        </div>
+    </div>
+
+    <!-- Mouse Glow Effect -->
+    <div class="cursor-glow"></div>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/6285150956644?text=Halo%20Hansai%20Ocean,%20saya%20ingin%20konsultasi%20mengenai%20jual%20beli%20armada%20kapal" 
+       class="floating-wa-btn" 
+       target="_blank" 
+       rel="noopener"
+       aria-label="Konsultasi Jual Beli Kapal via WhatsApp">
+        <div class="wa-pulse"></div>
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.06c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.106 8.106 0 0 1-1.25-4.29c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.23.85 5.77 2.39a8.127 8.127 0 0 1 2.39 5.77c0 4.51-3.66 8.15-8.18 8.15zm4.47-6.11c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.19 3.7.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
+        </svg>
+        <span class="floating-wa-tooltip">Konsultasi Jual Beli Kapal</span>
+    </a>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">HANSAI <span class="logo-sub">OCEAN INDUSTRIES LTD.</span></span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="sewa-kontainer.html" class="nav-link">Sewa Kontainer</a></li>
+                <li><a href="jual-beli-kapal.html" class="nav-link nav-highlight-gold">Jual Beli Kapal</a></li>
+                <li><a href="#katalog" class="nav-link">Katalog Kapal</a></li>
+                <li><a href="#prosedur" class="nav-link">Prosedur S&P</a></li>
+                <li><a href="#jual-kapal" class="nav-link">Titip Jual</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Scroll To Top -->
+    <button id="scrollToTop" title="Go to top">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero ship-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" style="background-image: url('assets/marine.jpg');"></div>
+        <div class="hero-content container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator">/</span>
+                <a href="index.html#services">Services</a>
+                <span class="separator">/</span>
+                <span class="current">Jual Beli Kapal</span>
+            </div>
+
+            <div class="ship-hero-badge">
+                <span class="pulse-dot-gold"></span> Ship Sale & Purchase (S&P) Desk • BKI & IACS Certified
+            </div>
+
+            <h1 class="typing-text">
+                Jual Beli Kapal & Brokerage Maritim Terpercaya
+            </h1>
+
+            <p class="fade-in-up">
+                Penyedia dan perantara jual beli kapal komersial dan industri terverifikasi: Tugboat, Tongkang Geladak, 
+                Oil & Chemical Tanker, Landing Craft Tank (LCT), Container Feeder, hingga Armada Lepas Pantai (AHTS). 
+                Lengkap dengan jaminan keabsahan sertifikat BKI/IACS, inspeksi teknis independen, dan fasilitas drydocking galangan Hansai.
+            </p>
+
+            <div class="hero-buttons fade-in-up delay-1">
+                <a href="#katalog" class="btn btn-primary ripple">Jelajahi Armada Dijual</a>
+                <a href="#jual-kapal" class="btn btn-outline ripple" style="border-color: #f59e0b; color: #fef3c7;">Titip Jual Kapal Anda</a>
+            </div>
+
+            <div class="ship-hero-stats fade-in-up delay-1">
+                <div class="ship-stat-card">
+                    <h3>150+</h3>
+                    <p>Unit Kapal Sukses Ditransaksikan</p>
+                </div>
+                <div class="ship-stat-card">
+                    <h3>100%</h3>
+                    <p>Legalitas BKI & Dephub Terverifikasi</p>
+                </div>
+                <div class="ship-stat-card">
+                    <h3>24/7</h3>
+                    <p>Layanan S&P & Quote Responsif</p>
+                </div>
+                <div class="ship-stat-card">
+                    <h3>In-House</h3>
+                    <p>Dukungan Drydock & Rekondisi</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-shape-divider-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="katalog" class="section-padding bg-light" style="padding-top: 50px;">
+        <div class="container">
+            <!-- Search & Controls Box -->
+            <div class="catalog-controls reveal">
+                <div class="search-bar-wrapper">
+                    <div class="search-input-box">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" id="shipSearchInput" placeholder="Cari nama kapal, tipe, mesin, lokasi pelabuhan, tahun...">
+                    </div>
+                    <div class="sort-select-box">
+                        <select id="shipSortSelect" aria-label="Urutkan Kapal">
+                            <option value="default">Urutkan: Rekomendasi</option>
+                            <option value="year-desc">Tahun Buat: Terbaru</option>
+                            <option value="year-asc">Tahun Buat: Terlama</option>
+                            <option value="name-asc">Nama Kapal: A - Z</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="category-filter-chips">
+                    <button class="filter-chip active" data-category="all">
+                        Semua Armada <span class="chip-count">9</span>
+                    </button>
+                    <button class="filter-chip" data-category="tugboat">
+                        Tugboat (Kapal Tunda) <span class="chip-count">1</span>
+                    </button>
+                    <button class="filter-chip" data-category="barge">
+                        Tongkang (Barge) <span class="chip-count">1</span>
+                    </button>
+                    <button class="filter-chip" data-category="tanker">
+                        Oil & Chemical Tanker <span class="chip-count">1</span>
+                    </button>
+                    <button class="filter-chip" data-category="lct">
+                        Landing Craft Tank (LCT) <span class="chip-count">1</span>
+                    </button>
+                    <button class="filter-chip" data-category="cargo">
+                        Kargo & Container <span class="chip-count">3</span>
+                    </button>
+                    <button class="filter-chip" data-category="offshore">
+                        AHTS & Offshore <span class="chip-count">1</span>
+                    </button>
+                    <button class="filter-chip" data-category="crew">
+                        Crew Boat & Fast Craft <span class="chip-count">1</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Section Title -->
+            <div class="section-header text-center mt-4 reveal">
+                <h2 class="section-title">Katalog Armada Kapal Tersedia</h2>
+                <div class="title-line center-line"></div>
+                <p>Klik kartu kapal untuk membuka deskripsi mendalam, spesifikasi teknis lengkap, serta tombol permintaan penawaran resmi (Quote) ke WhatsApp atau Email.</p>
+            </div>
+
+            <!-- Ships Grid -->
+            <div class="ships-grid" id="shipsGrid">
+                <!-- Dynamically rendered via ship-sale.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- S&P Procedure / Prosedur Jual Beli Section -->
+    <section id="prosedur" class="section-padding bg-white reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Alur & Prosedur Jual Beli Kapal (S&P)</h2>
+                <div class="title-line center-line"></div>
+                <p>Tata kelola transaksi kapal berstandar maritim internasional yang transparan, aman, dan berlandaskan hukum.</p>
+            </div>
+
+            <div class="process-steps-grid">
+                <div class="process-step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3>Verifikasi Data & Dokumen</h3>
+                    <p>Pemeriksaan menyeluruh atas surat ukur, grose akta balik nama, sertifikat klasifikasi BKI/IACS, dokumen kelaiklautan, dan status bebas hipotek/sengketa.</p>
+                </div>
+
+                <div class="process-step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            <path d="M11 8v6"></path>
+                            <path d="M8 11h6"></path>
+                        </svg>
+                    </div>
+                    <h3>Inspeksi Fisik & Underwater</h3>
+                    <p>Pemeriksaan teknis visual di pelabuhan atau floating dock, pengujian ketebalan pelat lambung (ultrasonic test), running test mesin utama, serta sea trial.</p>
+                </div>
+
+                <div class="process-step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3>MOA & Escrow Rekening Bersama</h3>
+                    <p>Penandatanganan Memorandum of Agreement (MOA standar SALEFORM 2012) dengan deposit jaminan aman pada rekening bersama (escrow) terpercaya.</p>
+                </div>
+
+                <div class="process-step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3>Bill of Sale & Serah Terima</h3>
+                    <p>Pelunasan akhir, penerbitan akta jual beli notaris (Bill of Sale), pengurusan balik nama bendera di Syahbandar/Dephub, dan serah terima fisik kapal (Protocol of Delivery and Acceptance).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sell Your Ship Section (Titip Jual Kapal) -->
+    <section id="jual-kapal" class="section-padding sell-ship-section reveal">
+        <div class="container">
+            <div class="sell-ship-grid">
+                <div class="sell-ship-text">
+                    <div class="ship-hero-badge" style="background: rgba(245, 158, 11, 0.2);">
+                        <span class="pulse-dot-gold"></span> Layanan Brokerage & Titip Jual
+                    </div>
+                    <h2>Ingin Menjual atau Menyewakan Kapal Anda?</h2>
+                    <p>
+                        Hansai Ocean Industries Ltd membuka pintu kemitraan bagi pemilik kapal (ship owners), perusahaan pelayaran, 
+                        maupun institusi keuangan maritim untuk memasarkan kapal Anda ke ribuan calon pembeli potensial di seluruh Nusantara dan Asia Pasifik.
+                    </p>
+
+                    <div class="sell-benefit-list">
+                        <div class="sell-benefit-item">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Jaringan Pembeli & Investor Luas</h4>
+                                <p>Terhubung langsung dengan operator tambang, logistik kontainer, perusahaan migas, dan trader komoditas.</p>
+                            </div>
+                        </div>
+
+                        <div class="sell-benefit-item">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Valuasi Teknis & Harga Pasar Akurat</h4>
+                                <p>Dukungan naval architects dan marine surveyors kami memastikan penetapan harga optimal dan kompetitif.</p>
+                            </div>
+                        </div>
+
+                        <div class="sell-benefit-item">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Fasilitas Galangan Mandiri untuk Refurbishment</h4>
+                                <p>Bila kapal butuh perbaikan sebelum inspeksi, galangan Hansai siap memberikan layanan docking cepat berbiaya efisien.</p>
+                            </div>
+                        </div>
+
+                        <div class="sell-benefit-item">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Keamanan Transaksi & Perlindungan Hukum</h4>
+                                <p>Seluruh proses dilengkapi perjanjian legal berkekuatan hukum penuh, nota kerahasiaan (NDA), dan escrow terjamin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sell Form Card -->
+                <div class="sell-form-card">
+                    <h3>Formulir Pendaftaran Kapal</h3>
+                    <p>Isi rincian kapal yang ingin Anda pasarkan. Data akan langsung diteruskan ke tim S&P Brokerage kami via WhatsApp atau Email.</p>
+
+                    <form id="sellShipForm">
+                        <div class="quote-form-grid">
+                            <div class="quote-form-group">
+                                <label for="sellOwnerName">Nama Pemilik / Kuasa Jual *</label>
+                                <input type="text" id="sellOwnerName" required placeholder="Contoh: Capt. Hendra / Bpk. Rudi">
+                            </div>
+                            <div class="quote-form-group">
+                                <label for="sellCompany">Nama Perusahaan / PT</label>
+                                <input type="text" id="sellCompany" placeholder="Contoh: PT Pelayaran Bahari Sentosa">
+                            </div>
+                        </div>
+
+                        <div class="quote-form-grid">
+                            <div class="quote-form-group">
+                                <label for="sellPhone">No. WhatsApp / HP *</label>
+                                <input type="tel" id="sellPhone" required placeholder="Contoh: 0812-3456-7890">
+                            </div>
+                            <div class="quote-form-group">
+                                <label for="sellEmail">Alamat Email *</label>
+                                <input type="email" id="sellEmail" required placeholder="email@perusahaan.com">
+                            </div>
+                        </div>
+
+                        <div class="quote-form-grid">
+                            <div class="quote-form-group">
+                                <label for="sellShipName">Nama Kapal & Bendera *</label>
+                                <input type="text" id="sellShipName" required placeholder="Contoh: TB. Samudra Raya (Indonesia)">
+                            </div>
+                            <div class="quote-form-group">
+                                <label for="sellShipType">Jenis / Kategori Kapal *</label>
+                                <select id="sellShipType">
+                                    <option value="Tugboat (Kapal Tunda)">Tugboat (Kapal Tunda)</option>
+                                    <option value="Tongkang / Deck Cargo Barge">Tongkang / Deck Cargo Barge</option>
+                                    <option value="Oil & Chemical Tanker">Oil & Chemical Tanker</option>
+                                    <option value="Landing Craft Tank (LCT)">Landing Craft Tank (LCT)</option>
+                                    <option value="Container Ship / Feeder">Container Ship / Feeder</option>
+                                    <option value="Bulk Carrier / General Cargo">Bulk Carrier / General Cargo</option>
+                                    <option value="AHTS / Offshore Support">AHTS / Offshore Support</option>
+                                    <option value="Crew Boat / Passenger Craft">Crew Boat / Passenger Craft</option>
+                                    <option value="Kapal Lainnya">Kapal Lainnya</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="quote-form-grid">
+                            <div class="quote-form-group">
+                                <label for="sellYear">Tahun Pembuatan *</label>
+                                <input type="number" id="sellYear" placeholder="Contoh: 2019" min="1980" max="2027">
+                            </div>
+                            <div class="quote-form-group">
+                                <label for="sellClass">Klasifikasi Kapal *</label>
+                                <select id="sellClass">
+                                    <option value="BKI (Biro Klasifikasi Indonesia)">BKI</option>
+                                    <option value="Dual Class BKI + IACS (ABS / NK / LR / BV)">Dual Class (BKI + IACS)</option>
+                                    <option value="IACS Only (NK / ABS / Lloyd's / BV / RINA)">IACS Non-BKI</option>
+                                    <option value="Non-Class / Dalam Proses Re-class">Non-Class / Re-class</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="quote-form-grid">
+                            <div class="quote-form-group">
+                                <label for="sellDimensions">Dimensi / Kapasitas (LOA & DWT/BHP) *</label>
+                                <input type="text" id="sellDimensions" placeholder="Contoh: 32m x 9m | 3.200 BHP">
+                            </div>
+                            <div class="quote-form-group">
+                                <label for="sellEngine">Merk & Tipe Mesin Utama</label>
+                                <input type="text" id="sellEngine" placeholder="Contoh: Yanmar / Mitsubishi / Caterpillar">
+                            </div>
+                        </div>
+
+                        <div class="quote-form-grid">
+                            <div class="quote-form-group">
+                                <label for="sellLocation">Posisi Sandar / Pelabuhan Inspeksi *</label>
+                                <input type="text" id="sellLocation" placeholder="Contoh: Batam / Tanjung Priok / Samarinda">
+                            </div>
+                            <div class="quote-form-group">
+                                <label for="sellExpectedPrice">Ekspektasi Harga Penawaran</label>
+                                <input type="text" id="sellExpectedPrice" placeholder="Contoh: Rp 12 Miliar (Nego)">
+                            </div>
+                        </div>
+
+                        <div class="quote-form-group" style="margin-bottom: 1.5rem;">
+                            <label for="sellNotes">Keterangan Kondisi & Dokumen</label>
+                            <textarea id="sellNotes" rows="3" placeholder="Jelaskan jadwal drydock terakhir, status operasional (on charter/idle), ketersediaan dokumen ship particulars..."></textarea>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                            <button type="button" id="sellShipSendWaBtn" class="btn-wa-quote w-100">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.06c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.106 8.106 0 0 1-1.25-4.29c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.23.85 5.77 2.39a8.127 8.127 0 0 1 2.39 5.77c0 4.51-3.66 8.15-8.18 8.15zm4.47-6.11c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.19 3.7.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
+                                </svg>
+                                Kirim ke WhatsApp
+                            </button>
+                            <button type="button" id="sellShipSendEmailBtn" class="btn-email-quote w-100">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                Kirim ke Email
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Hansai S&P Brokerage Section -->
+    <section class="section-padding bg-light reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Mengapa Memilih Hansai Ocean S&P?</h2>
+                <div class="title-line center-line"></div>
+                <p>Keunggulan komparatif yang menjadikan kami mitra terpercaya transaksi kapal di Indonesia.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item glass-card hover-scale" style="background: #ffffff;">
+                    <div class="feature-icon" style="color: var(--secondary-color);">
+                        <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.5" fill="none">
+                            <path d="M3 21h18M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7H3l2-4h14l2 4"></path>
+                        </svg>
+                    </div>
+                    <h4>Dukungan Galangan Sendiri</h4>
+                    <p style="font-size: 0.9rem; color: #64748b; margin-top: 8px;">Kapasitas drydock dan slipway in-house Hansai siap melayani survei bawah air, blasting, pengecatan lambung, dan modifikasi palka sebelum serah terima.</p>
+                </div>
+
+                <div class="feature-item glass-card hover-scale" style="background: #ffffff;">
+                    <div class="feature-icon" style="color: var(--secondary-color);">
+                        <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.5" fill="none">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h4>Legalitas & Cabotage Compliance</h4>
+                    <p style="font-size: 0.9rem; color: #64748b; margin-top: 8px;">Memastikan kepatuhan asas Cabotage (Undang-Undang Pelayaran No. 17/2008), keabsahan grose akta balik nama, dan pemenuhan standar ISM Code & ISPS.</p>
+                </div>
+
+                <div class="feature-item glass-card hover-scale" style="background: #ffffff;">
+                    <div class="feature-icon" style="color: var(--secondary-color);">
+                        <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.5" fill="none">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h4>Tim Broker & Surveyor Berpengalaman</h4>
+                    <p style="font-size: 0.9rem; color: #64748b; margin-top: 8px;">Didukung certified marine surveyors dan commercial shipbrokers yang memahami seluk-beluk teknis permesinan serta dinamika harga freight rate pasar.</p>
+                </div>
+
+                <div class="feature-item glass-card hover-scale" style="background: #ffffff;">
+                    <div class="feature-icon" style="color: var(--secondary-color);">
+                        <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.5" fill="none">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>
+                    </div>
+                    <h4>Layanan Towing & Delivery Antarpulau</h4>
+                    <p style="font-size: 0.9rem; color: #64748b; margin-top: 8px;">Menyediakan pengawalan pelayaran serah terima kapal (ship delivery service), bunker arrangement, hingga mobilisasi awak kapal bersertifikat STCW.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-padding bg-white reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Pertanyaan Umum (FAQ) Jual Beli Kapal</h2>
+                <div class="title-line center-line"></div>
+                <p>Informasi esensial mengenai prosedur teknis, legalitas, dan mekanisme pembayaran transaksi kapal.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bagaimana cara melakukan inspeksi fisik (pre-purchase survey) kapal?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        Calon pembeli dapat mengajukan Letter of Intent (LOI) atau menghubungi kami via WhatsApp/Email. Tim Hansai Ocean akan mengoordinasikan izin masuk pelabuhan (port pass), pendampingan surveyor independen, pembukaan tangki/ruang muat, serta pelaksanaan running test mesin di lokasi sandar kapal.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah kapal yang terdaftar di Hansai Ocean memiliki sertifikat kelas yang aktif?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        Ya. Sebagian besar armada kami mengantongi sertifikat BKI (Biro Klasifikasi Indonesia) atau Dual Class anggota IACS (ClassNK, ABS, Lloyd's Register, BV) dengan status kelaiklautan yang aktif. Kami menyediakan ringkasan survei statutori dan riwayat rekomendasi kelas secara terbuka sebelum penandatanganan MOA.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bagaimana mekanisme pembayaran dan keamanan dana transaksi kapal?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        Transaksi mengikuti standar perjanjian maritim internasional SALEFORM 2012. Pembeli menyetorkan uang jaminan (deposit 10%) ke rekening bersama (joint escrow account) yang ditunjuk bersama. Pelunasan sisa 90% hanya ditransfer saat akta jual beli resmi (Bill of Sale) ditandatangani dan fisik kapal diserahterimakan secara sah.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah Hansai Ocean melayani opsi sewa beli (Bareboat Charter with Purchase Option)?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        Tentu. Untuk unit kapal tertentu, kami memfasilitasi skema Bareboat Charter with Purchase Option (BBC-PO) maupun sewa jangka panjang (Time Charter) yang disesuaikan dengan kelayakan finansial dan kontrak kerja proyek dari penyewa/pembeli.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Berapa lama proses balik nama sertifikat dan grose akta kapal di Kementerian Perhubungan?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        Proses balik nama grose akta pendaftaran dan surat ukur kapal di Syahbandar/Kemenhub biasanya memakan waktu 14 hingga 30 hari kerja tergantung kelengkapan dokumen perpajakan, pencoretan hipotik (de-registration), dan pelunasan PNBP. Tim legal maritim kami siap mendampingi pengurusan hingga tuntas.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Ship Modal Popup -->
+    <div id="shipModalOverlay" class="ship-modal-overlay">
+        <div class="ship-modal-window">
+            <div class="ship-modal-header">
+                <div class="modal-title-group">
+                    <h3 id="modalShipTitle">Nama Kapal</h3>
+                    <div class="sub-meta" id="modalShipMeta">
+                        <span>ID Listing: HN-XXXX</span>
+                    </div>
+                </div>
+                <button class="ship-modal-close-btn" id="closeShipModalBtn" title="Tutup Popup">&times;</button>
+            </div>
+
+            <div class="ship-modal-scrollable-body">
+                <!-- Top Section: Visual & Summary -->
+                <div class="modal-top-grid">
+                    <div class="modal-ship-image-box">
+                        <img id="modalShipImage" src="assets/ships/tugboat.jpg" alt="Preview Kapal">
+                    </div>
+
+                    <div class="modal-quick-summary">
+                        <div>
+                            <div class="summary-spec-badge-list" id="modalShipBadges">
+                                <!-- Badges dynamic -->
+                            </div>
+                            <div class="modal-desc-box" id="modalShipDesc">
+                                <!-- Description dynamic -->
+                            </div>
+                        </div>
+
+                        <!-- Direct WhatsApp and Email Quote Action Bar -->
+                        <div class="modal-quote-action-bar">
+                            <h4>
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                Minta Surat Penawaran Harga (Quote Langsung)
+                            </h4>
+                            <div class="quote-btn-group">
+                                <a id="modalDirectWaBtn" href="#" target="_blank" class="btn-wa-quote">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.06c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.106 8.106 0 0 1-1.25-4.29c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.23.85 5.77 2.39a8.127 8.127 0 0 1 2.39 5.77c0 4.51-3.66 8.15-8.18 8.15zm4.47-6.11c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.19 3.7.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
+                                    </svg>
+                                    Quote via WhatsApp
+                                </a>
+                                <a id="modalDirectEmailBtn" href="#" class="btn-email-quote">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    Quote via Email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Technical Specs Table Grid -->
+                <div class="modal-specs-section">
+                    <div class="specs-section-title">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        Spesifikasi Teknis & Kelaiklautan (Ship Particulars)
+                    </div>
+                    <div class="modal-specs-table-grid" id="modalSpecsGrid">
+                        <!-- Dynamic specs rows -->
+                    </div>
+                </div>
+
+                <!-- Custom Quote Form inside Modal -->
+                <div class="custom-quote-toggle-box">
+                    <div class="custom-quote-card">
+                        <div class="specs-section-title" style="margin-bottom: 0.5rem; font-size: 1.05rem;">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                            </svg>
+                            Ajukan Penawaran Khusus / Jadwal Inspeksi
+                        </div>
+                        <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 1.25rem;">
+                            Lengkapi data di bawah ini untuk menghasilkan draf surat penawaran otomatis yang langsung terhubung ke WhatsApp atau Email sales desk Hansai:
+                        </p>
+
+                        <form id="modalCustomQuoteForm">
+                            <div class="quote-form-grid">
+                                <div class="quote-form-group">
+                                    <label for="modalFormName">Nama Lengkap Anda *</label>
+                                    <input type="text" id="modalFormName" placeholder="Contoh: Bpk. Haryono">
+                                </div>
+                                <div class="quote-form-group">
+                                    <label for="modalFormCompany">Nama Perusahaan / Instansi</label>
+                                    <input type="text" id="modalFormCompany" placeholder="Contoh: PT Samudra Energi Nusantara">
+                                </div>
+                            </div>
+
+                            <div class="quote-form-grid">
+                                <div class="quote-form-group">
+                                    <label for="modalFormPhone">Nomor WhatsApp / HP *</label>
+                                    <input type="tel" id="modalFormPhone" placeholder="Contoh: 0812-3456-7890">
+                                </div>
+                                <div class="quote-form-group">
+                                    <label for="modalFormEmail">Email Perusahaan *</label>
+                                    <input type="email" id="modalFormEmail" placeholder="contoh@domain.com">
+                                </div>
+                            </div>
+
+                            <div class="quote-form-grid">
+                                <div class="quote-form-group">
+                                    <label for="modalFormPlan">Rencana Transaksi / Kebutuhan</label>
+                                    <select id="modalFormPlan">
+                                        <option value="Pembelian Unit Kapal (Full Outright Purchase)">Beli Unit Kapal (Outright Purchase)</option>
+                                        <option value="Permohonan Jadwal Inspeksi Fisik (Pre-Purchase Survey)">Jadwalkan Inspeksi Fisik & Pre-Purchase</option>
+                                        <option value="Sewa Beli / Bareboat Charter with Purchase Option (BBC-PO)">Sewa Beli (Bareboat Charter with Purchase)</option>
+                                        <option value="Sewa Jangka Panjang (Time Charter)">Sewa Jangka Panjang (Time Charter)</option>
+                                    </select>
+                                </div>
+                                <div class="quote-form-group">
+                                    <label for="modalFormNotes">Kebutuhan / Permintaan Khusus</label>
+                                    <input type="text" id="modalFormNotes" placeholder="Contoh: Mohon sertakan GA Plan & riwayat drydock">
+                                </div>
+                            </div>
+
+                            <div style="display: flex; gap: 12px; margin-top: 1.25rem;">
+                                <button type="button" id="modalFormSendWa" class="btn-wa-quote w-100">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.06c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.106 8.106 0 0 1-1.25-4.29c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.23.85 5.77 2.39a8.127 8.127 0 0 1 2.39 5.77c0 4.51-3.66 8.15-8.18 8.15zm4.47-6.11c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.19 3.7.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
+                                    </svg>
+                                    Kirim Form ke WhatsApp
+                                </button>
+                                <button type="button" id="modalFormSendEmail" class="btn-email-quote w-100">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    Kirim Form ke Email
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="contact section-padding bg-light reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Konsultasi S&P Brokerage</h2>
+                <div class="title-line center-line"></div>
+                <p>Hubungi Ship Sale & Purchase desk Hansai Ocean Industries untuk kebutuhan armada spesifik atau off-market fleet.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Alamat Kantor</h4>
+                            <p>Jakarta & Galangan Kapal Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email Resmi</h4>
+                            <p><a href="mailto:info@hansaiocean.com" style="color: var(--secondary-color); font-weight: 600;">info@hansaiocean.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Telepon / WhatsApp Desk</h4>
+                            <p><a href="https://wa.me/6285150956644" target="_blank" style="color: var(--secondary-color); font-weight: 600;">+62 851-5095-6644</a></p>
+                        </div>
+                    </div>
+
+                    <div class="map-container rounded-card">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.24009772658!2d106.74542289416568!3d-6.22974649666063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x100c5e82dd4b820!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1699999999999!5m2!1sen!2sid"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form glass-card" style="background: #ffffff;">
+                    <h3>Kirimkan Permintaan Kustom Armada</h3>
+                    <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 1.5rem;">Bila kapal yang Anda butuhkan belum tercantum di katalog terbuka kami, mohon kirimkan spesifikasi kapal yang dicari:</p>
+                    <form onsubmit="event.preventDefault(); const name = document.getElementById('cfName').value; const type = document.getElementById('cfType').value; const msg = document.getElementById('cfMsg').value; window.open('https://wa.me/6285150956644?text=' + encodeURIComponent('Halo Hansai Ocean, saya mencari kapal: ' + type + '. Keterangan: ' + msg + ' - Dari: ' + name), '_blank');">
+                        <div class="form-group">
+                            <input type="text" id="cfName" required placeholder="Nama Lengkap / Perusahaan">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="cfType" required placeholder="Jenis Kapal yang Dicari (misal: LCT 2.000 DWT / Tug 4.000 HP)">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="cfMsg" rows="4" required placeholder="Tuliskan kisaran anggaran, tahun preferensi, atau rute operasional pelayaran..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary ripple w-100" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.06c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.106 8.106 0 0 1-1.25-4.29c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.23.85 5.77 2.39a8.127 8.127 0 0 1 2.39 5.77c0 4.51-3.66 8.15-8.18 8.15zm4.47-6.11c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.19 3.7.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
+                            </svg>
+                            Kirim ke Sales Brokerage via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo footer-logo">
+                        <span class="logo-text text-white">HANSAI <br><span class="logo-sub text-gray">OCEAN INDUSTRIES LTD.</span></span>
+                    </a>
+                    <p class="mt-2 text-gray">
+                        Perusahaan galangan kapal terintegrasi, teknik lepas pantai, penyewaan peti kemas, 
+                        dan divisi Ship Sale & Purchase (S&P) brokerage berstandar kualitas internasional.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="hover-scale"><svg viewBox="0 0 24 24" width="20" height="20"
+                                stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg></a>
+                        <a href="#" class="hover-scale"><svg viewBox="0 0 24 24" width="20" height="20"
+                                stroke="currentColor" stroke-width="2" fill="none">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg></a>
+                        <a href="#" class="hover-scale"><svg viewBox="0 0 24 24" width="20" height="20"
+                                stroke="currentColor" stroke-width="2" fill="none">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a>
+                        <a href="#" class="hover-scale"><svg viewBox="0 0 24 24" width="20" height="20"
+                                stroke="currentColor" stroke-width="2" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="jual-beli-kapal.html">Jual Beli Kapal (S&P)</a></li>
+                        <li><a href="sewa-kontainer.html">Sewa Kontainer (20/40/60ft)</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#career">Career</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Armada S&P</h4>
+                    <ul>
+                        <li><a href="#katalog">Tugboat Samudera</a></li>
+                        <li><a href="#katalog">Tongkang Deck 300ft</a></li>
+                        <li><a href="#katalog">Oil & Chemical Tanker</a></li>
+                        <li><a href="#katalog">Landing Craft Tank (LCT)</a></li>
+                        <li><a href="#katalog">Container Feeder</a></li>
+                        <li><a href="#jual-kapal">Titip Jual Kapal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>Jakarta, Indonesia</p>
+                    <p><a href="mailto:info@hansaiocean.com" style="color: #90caf9;">info@hansaiocean.com</a></p>
+                    <p><a href="https://wa.me/6285150956644" target="_blank" style="color: #90caf9;">+62 851-5095-6644</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Hansai Ocean Industries Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="ship-sale.js"></script>
+</body>
+
+</html>
