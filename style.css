@@ -215,9 +215,9 @@ ul {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 1320px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -243,14 +243,18 @@ ul {
 
 .nav-menu {
     display: flex;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
 }
 
 .nav-link {
     color: var(--white);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     position: relative;
+    white-space: nowrap !important;
+    display: inline-block;
     transition: var(--transition);
 }
 
@@ -275,18 +279,84 @@ ul {
     color: var(--secondary-color) !important;
 }
 
-.nav-link.nav-highlight {
-    background: linear-gradient(135deg, rgba(30, 136, 229, 0.25), rgba(11, 37, 69, 0.4));
-    border: 1px solid rgba(30, 136, 229, 0.5);
-    padding: 6px 14px !important;
-    border-radius: 20px;
-    font-weight: 600;
+/* Nav Highlight Badge - Sewa Kontainer (Ocean Blue Pill) */
+.nav-link.nav-highlight,
+.nav-highlight {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    background: linear-gradient(135deg, rgba(30, 136, 229, 0.35), rgba(11, 37, 69, 0.6)) !important;
+    border: 1px solid rgba(144, 202, 249, 0.7) !important;
+    padding: 7px 18px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    font-size: 0.88rem !important;
+    color: #ffffff !important;
+    line-height: 1 !important;
+    box-shadow: 0 2px 10px rgba(30, 136, 229, 0.3);
+    flex-shrink: 0;
+    text-decoration: none;
 }
 
-#navbar.scrolled .nav-link.nav-highlight {
-    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+.nav-link.nav-highlight::after,
+.nav-highlight::after {
+    display: none !important;
+}
+
+.nav-link.nav-highlight:hover,
+.nav-highlight:hover {
+    background: linear-gradient(135deg, #1e88e5, #0b2545) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(30, 136, 229, 0.5);
+}
+
+#navbar.scrolled .nav-link.nav-highlight,
+#navbar.scrolled .nav-highlight {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)) !important;
     color: var(--white) !important;
-    border: none;
+    border: none !important;
+}
+
+/* Nav Highlight Badge - Jual Beli Kapal (Maritime Gold Pill) */
+.nav-link.nav-highlight-gold,
+.nav-highlight-gold {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+    border: 1px solid rgba(254, 243, 199, 0.8) !important;
+    padding: 7px 18px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    font-size: 0.88rem !important;
+    color: #ffffff !important;
+    line-height: 1 !important;
+    box-shadow: 0 2px 10px rgba(245, 158, 11, 0.35);
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+.nav-link.nav-highlight-gold::after,
+.nav-highlight-gold::after {
+    display: none !important;
+}
+
+.nav-link.nav-highlight-gold:hover,
+.nav-highlight-gold:hover {
+    background: linear-gradient(135deg, #fbbf24, #b45309) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.55);
+}
+
+#navbar.scrolled .nav-link.nav-highlight-gold,
+#navbar.scrolled .nav-highlight-gold {
+    background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+    color: #ffffff !important;
+    border: none !important;
 }
 
 .menu-toggle {
@@ -1089,7 +1159,56 @@ ul {
 /* ======================================================
    RESPONSIVE DESIGN (TABLET & MOBILE)
 ====================================================== */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .nav-container { padding: 0 1rem; }
+    .nav-menu { gap: 0.65rem; }
+    .nav-link { font-size: 0.82rem; }
+    .nav-link.nav-highlight,
+    .nav-highlight,
+    .nav-link.nav-highlight-gold,
+    .nav-highlight-gold {
+        padding: 6px 14px !important;
+        font-size: 0.82rem !important;
+        white-space: nowrap !important;
+    }
+}
+
 @media (max-width: 991px) {
+    .menu-toggle { display: block; }
+    .nav-menu {
+        position: fixed;
+        top: 0; left: -100%;
+        width: 80%; max-width: 380px; height: 100vh;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: 0.4s;
+        box-shadow: 2px 0 20px rgba(0,0,0,0.5);
+        padding: 5rem 1.5rem 2rem 1.5rem;
+        overflow-y: auto;
+        gap: 0.6rem;
+    }
+    .nav-menu.active { left: 0; }
+    .nav-menu li { margin: 6px 0; width: 100%; text-align: center; }
+    .nav-link { font-size: 1.05rem; }
+    .nav-link::after { display: none; }
+    
+    .nav-link.nav-highlight,
+    .nav-highlight,
+    .nav-link.nav-highlight-gold,
+    .nav-highlight-gold {
+        display: inline-flex !important;
+        width: auto;
+        padding: 8px 24px !important;
+        font-size: 0.95rem !important;
+        white-space: nowrap !important;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .menu-toggle.active .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
     .section-padding { padding: 70px 0; }
     .hero-content h1 { font-size: 3rem; }
     .about-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -1103,27 +1222,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .menu-toggle { display: block; }
-    .nav-menu {
-        position: fixed;
-        top: 0; left: -100%;
-        width: 80%; height: 100vh;
-        background-color: var(--primary-color);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: 0.4s;
-        box-shadow: 2px 0 20px rgba(0,0,0,0.5);
-    }
-    .nav-menu.active { left: 0; }
-    .nav-menu li { margin: 15px 0; }
-    .nav-link { font-size: 1.2rem; }
-    .nav-link::after { display: none; }
-    
-    .menu-toggle.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-    .menu-toggle.active .bar:nth-child(2) { opacity: 0; }
-    .menu-toggle.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-
     .hero-content h1 { font-size: 2.5rem; }
     .footer-grid { grid-template-columns: 1fr; }
 }

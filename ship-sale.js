@@ -24,7 +24,7 @@ const SHIPS_DATABASE = [
         status: "Siap Inspeksi & Sea Trial",
         statusType: "ready",
         priceGuide: "Hubungi Sales (Nego)",
-        image: "assets/ships/tugboat.jpg",
+        image: "assets/ships/tugboat.png",
         description: "Kapal tunda samudera (Ocean Going Tugboat) berdaya 3.200 BHP dalam kondisi sangat terawat dan siap pakai berlayar. Baru saja menyelesaikan Annual Survey & Drydocking resmi BKI pada pertengahan 2025. Dilengkapi hydraulic towing winch 45 Ton, stern roller, bow thruster, radar Furuno ARPA, AIS Class A, ECDIS terverifikasi, dan akomodasi 14 awak kabin ber-AC. Sistem propulsi bebas vibrasi, sangat ideal untuk operasional towing tongkang batubara 300ft, tongkang nikel, atau offshore supply di perairan domestik maupun internasional."
     },
     {
