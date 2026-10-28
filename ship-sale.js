@@ -47,7 +47,7 @@ const SHIPS_DATABASE = [
         status: "Prompt Delivery",
         statusType: "ready",
         priceGuide: "Hubungi Sales (Nego)",
-        image: "assets/ships/barge-tug.jpg",
+        image: "assets/ships/Tongkang.png",
         description: "Tongkang geladak muatan curah 300 Feet heavy-duty dengan konstruksi sideboard 12 ft terpasang kokoh. Didesain secara khusus untuk angkutan batubara, bijih nikel (nickel ore), pasir, batu split, dan mobilisasi alat berat konstruksi/tambang. Ketebalan pelat lantai geladak (deck plate) 14 mm tanpa deformasi struktural, anoda korban zink terpasang baru, sertifikat garis muat dan keselamatan BKI aktif hingga akhir 2027. Dokumen legalitas dan surat ukur lengkap, siap serah terima prompt."
     },
     {
@@ -70,7 +70,7 @@ const SHIPS_DATABASE = [
         status: "Lulus Vetting Pertamina",
         statusType: "ready",
         priceGuide: "Hubungi Sales (Nego)",
-        image: "assets/ships/tanker.jpg",
+        image: "assets/ships/Tanker2.png",
         description: "Kapal tanker minyak dan produk kimia ringan berstandar internasional dengan sertifikat valid SIRE dan kelulusan Vetting Pertamina. Didesain dengan lambung ganda penuh (Double Hull & Double Bottom) sesuai regulasi MARPOL Annex I. Seluruh ruang muat dilapisi marine epoxy grade tinggi, dilengkapi 2 unit pompa kargo ulir (screw pump) berkapasitas 750 m³/jam, inert gas system (IGS), serta sistem pemadam busa tetap (foam fire system). Sangat siap untuk distribusi BBM Solar/B35, Bensin, MFO, maupun minyak kelapa sawit (CPO)."
     },
     {
@@ -93,7 +93,7 @@ const SHIPS_DATABASE = [
         status: "Tersedia Siap Operasi",
         statusType: "ready",
         priceGuide: "Hubungi Sales (Nego)",
-        image: "assets/ships/lct.jpg",
+        image: "assets/ships/LCT3.png",
         description: "Kapal Landing Craft Tank (LCT) 1.500 DWT dengan ramp door hidrolik berdaya tahan beban 60 ton. Memiliki area dek terbuka seluas 48 m x 13.5 m yang mampu memuat hingga 22 unit truk tronton, dump truck, excavator, atau material proyek tiang pancang. Sangat ideal untuk ekspedisi antarpulau dan proyek logistik di pesisir atau pulau terpencil tanpa fasilitas pelabuhan beton. Tangki air tawar dan BBM cadangan besar, kondisi mesin kering dan terawat berkala."
     },
     {
@@ -116,7 +116,7 @@ const SHIPS_DATABASE = [
         status: "Siap Inspeksi Port",
         statusType: "ready",
         priceGuide: "Hubungi Sales (Nego)",
-        image: "assets/ships/ahts-offshore.jpg",
+        image: "assets/ships/Hansai Defender.png",
         description: "Kapal offshore serbaguna Anchor Handling Tug Supply (AHTS) berkekuatan 5.150 BHP dengan sertifikasi Dynamic Positioning DP-1 dan sistem pemadam kebakaran eksternal FiFi-1 (2 x 1.200 m³/jam). Dirancang untuk pekerjaan rig towing, penarikan jangkar laut dalam, pasokan logistik anjungan lepas pantai (drilling mud/brine/fuel/water), serta siaga darurat migas. Dilengkapi waterfall double drum towing winch 150 Ton, stern roller, shark jaws, tugger winch, dan kabin berstandar offshore untuk 28 personel."
     },
     {
@@ -139,7 +139,7 @@ const SHIPS_DATABASE = [
         status: "Siap Delivery",
         statusType: "ready",
         priceGuide: "Hubungi Sales (Nego)",
-        image: "assets/ships/containership.jpg",
+        image: "assets/ships/Hansai Cargo Feeder.png",
         description: "Kapal kontainer feeder berkecepatan 14 knot, sangat efisien untuk mendukung konektivitas rute peti kemas domestik dan tol laut kawasan timur Indonesia. Berkapasitas 380 TEU dilengkapi 60 titik colokan reefer container untuk komoditas cold chain beku (seafood, daging, buah). Ruang kendali bridge terintegrasi dengan konsol navigasi modern, sistem pemantauan konsumsi bahan bakar otomatis, palka berdesain cell guides kokoh, serta riwayat perawatan mesin berkala yang terdokumentasi lengkap."
     },
     {
@@ -162,8 +162,8 @@ const SHIPS_DATABASE = [
         status: "Siap Inspeksi Drydock",
         statusType: "ready",
         priceGuide: "Hubungi Sales (Nego)",
-        image: "assets/ships/bulk-carrier.jpg",
-        description: "Kapal kargo curah kering ukuran Handysize mandiri (self-geared) dengan 4 unit electro-hydraulic deck crane kapasitas masing-masing 30.5 ton ditambah clamshell grabs 10 m³. Memungkinkan proses bongkar muat mandiri yang cepat di pelabuhan tanpa crane darat. Memiliki 5 palka luas berpenutup MacGregor hidrolik, sangat cocok untuk angkutan gandum, jagung, kedelai, pupuk, clinker semen, dan batubara. Tangki ballast telah disurvei ultrasonik dengan hasil ketebalan pelat optimal."
+        image: "assets/ships/HANSAI VALOR at Sea.png",
+        description: "Kapal kargo curah kering ukuran Handysize mandiri (self-geared) dengan 3 unit electro-hydraulic deck crane kapasitas masing-masing 30.5 ton ditambah clamshell grabs 10 m³. Memungkinkan proses bongkar muat mandiri yang cepat di pelabuhan tanpa crane darat. Memiliki 5 palka luas berpenutup MacGregor hidrolik, sangat cocok untuk angkutan gandum, jagung, kedelai, pupuk, clinker semen, dan batubara. Tangki ballast telah disurvei ultrasonik dengan hasil ketebalan pelat optimal."
     },
     {
         id: "HN-CB4008",
@@ -185,7 +185,7 @@ const SHIPS_DATABASE = [
         status: "Unit Baru (Ready Prompt)",
         statusType: "ready",
         priceGuide: "Hubungi Sales (Nego)",
-        image: "assets/ships/crew-luxury.jpg",
+        image: "assets/ships/Hansai Swift 01 at Sea.png",
         description: "Kapal cepat transfer kru (Fast Support Vessel) berbadan aluminium kualitas marine grade 5083, menawarkan efisiensi bobot dan kelincahan manuver di perairan berombak. Mengusung konfigurasi 3 mesin utama Cummins bertenaga 4.050 BHP dan 3 fixed pitch propellers. Ruang penumpang eksekutif menampung 80 tempat duduk reclining ala kabin pesawat dengan AC sejuk, TV entertainment, toilet higienis, serta dek belakang seluas 90 m² untuk muatan kargo ringan/peralatan darurat."
     },
     {
@@ -208,7 +208,7 @@ const SHIPS_DATABASE = [
         status: "Siap Operasi",
         statusType: "ready",
         priceGuide: "Hubungi Sales (Nego)",
-        image: "assets/ships/general-cargo.jpg",
+        image: "assets/ships/HANSAI-Container-Ship-at-Sea.png",
         description: "Kapal kargo umum antarpulau berdesain box-shaped holds yang memudahkan penataan kargo kantong (semen, pupuk), besi ulir/profil, kayu lapis, serta palet logistik industri. Dilengkapi 2 unit crane pedestal berkapasitas 20 ton. Konsumsi bahan bakar sangat ekonomis dengan jangkauan jelajah hingga 3.000 mil laut. Kondisi kamar mesin rapi dan bersih, seluruh sertifikat keselamatan pelayaran dari Ditjen Hubla & BKI aktif berlaku."
     }
 ];
@@ -248,10 +248,10 @@ function getFilteredShips() {
     return SHIPS_DATABASE.filter(ship => {
         // Category match
         const matchesCategory = (currentCategoryFilter === 'all') || (ship.category === currentCategoryFilter);
-        
+
         // Search term match
         const term = currentSearchTerm.toLowerCase().trim();
-        const matchesSearch = !term || 
+        const matchesSearch = !term ||
             ship.name.toLowerCase().includes(term) ||
             ship.id.toLowerCase().includes(term) ||
             ship.categoryLabel.toLowerCase().includes(term) ||
@@ -552,8 +552,8 @@ function updateModalActionButtons(ship, customData = {}) {
     const userNotes = customData.notes || 'Mohon kirimkan surat penawaran harga resmi (Quotation), spesifikasi Q88 / particulars lengkap, dan jadwal inspeksi fisik kapal.';
 
     // Generate WhatsApp Message
-    const waMessage = 
-`Halo Tim Ship Sale & Purchase (S&P) Hansai Ocean Industries Ltd,
+    const waMessage =
+        `Halo Tim Ship Sale & Purchase (S&P) Hansai Ocean Industries Ltd,
 
 Saya ingin meminta *Surat Penawaran Resmi (Formal Quotation)* untuk kapal berikut:
 
@@ -583,8 +583,8 @@ Mohon dapat diinformasikan penawaran harga dan prosedur inspeksi pre-purchase / 
 
     // Generate Email Subject & Body
     const emailSubject = `Permintaan Penawaran Resmi Kapal: ${ship.name} (${ship.id}) - Hansai Ocean S&P`;
-    const emailBody = 
-`Kepada Yth.
+    const emailBody =
+        `Kepada Yth.
 Tim Ship Sale & Purchase (S&P) Brokerage
 Hansai Ocean Industries Ltd
 Email: ${HANSAI_CONTACT.email}
@@ -748,8 +748,8 @@ function initSellShipForm() {
             e.preventDefault();
             const data = getSellShipFormData();
 
-            const waText = 
-`Halo Tim Hansai Ocean S&P Brokerage,
+            const waText =
+                `Halo Tim Hansai Ocean S&P Brokerage,
 
 Saya ingin mengajukan *PENDAFTARAN / TITIP JUAL KAPAL* melalui Hansai Ocean:
 
@@ -782,8 +782,8 @@ Mohon dapat dihubungi untuk verifikasi data kapal dan penandatanganan perjanjian
             const data = getSellShipFormData();
 
             const subject = `Pendaftaran Titip Jual Kapal: ${data.shipName} (${data.shipType}) - ${data.ownerName}`;
-            const body = 
-`Kepada Yth.
+            const body =
+                `Kepada Yth.
 Tim S&P Brokerage & Valuasi Kapal
 Hansai Ocean Industries Ltd
 Email: ${HANSAI_CONTACT.email}
