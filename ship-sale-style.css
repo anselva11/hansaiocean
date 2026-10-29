@@ -99,6 +99,55 @@
     border: none !important;
 }
 
+.nav-link.nav-highlight-career,
+.nav-highlight-career {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    white-space: nowrap !important;
+    background: linear-gradient(135deg, #059669, #0d9488) !important;
+    border: 1px solid rgba(167, 243, 208, 0.8) !important;
+    padding: 7px 18px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    line-height: 1 !important;
+    box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+    flex-shrink: 0;
+    text-decoration: none;
+    transition: var(--transition);
+}
+.nav-link.nav-highlight-career:hover,
+.nav-highlight-career:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(5, 150, 105, 0.5);
+    background: linear-gradient(135deg, #047857, #0f766e) !important;
+}
+.nav-link.nav-highlight-career::after,
+.nav-highlight-career::after {
+    display: none !important;
+}
+#navbar.scrolled .nav-link.nav-highlight-career,
+#navbar.scrolled .nav-highlight-career {
+    background: linear-gradient(135deg, #059669, #0d9488) !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+.hiring-badge-dot {
+    width: 7px;
+    height: 7px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px #ffffff;
+    animation: pulseMiniDot 1.5s infinite;
+}
+@keyframes pulseMiniDot {
+    0%, 100% { transform: scale(0.9); opacity: 0.9; }
+    50% { transform: scale(1.4); opacity: 1; }
+}
+
 /* Floating WhatsApp Button */
 .floating-wa-btn {
     position: fixed;
