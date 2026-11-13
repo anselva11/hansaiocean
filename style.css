@@ -279,45 +279,7 @@ ul {
     color: var(--secondary-color) !important;
 }
 
-/* Nav Highlight Badge - Sewa Kontainer (Ocean Blue Pill) */
-.nav-link.nav-highlight,
-.nav-highlight {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    white-space: nowrap !important;
-    background: linear-gradient(135deg, rgba(30, 136, 229, 0.35), rgba(11, 37, 69, 0.6)) !important;
-    border: 1px solid rgba(144, 202, 249, 0.7) !important;
-    padding: 7px 18px !important;
-    border-radius: 50px !important;
-    font-weight: 600 !important;
-    font-size: 0.88rem !important;
-    color: #ffffff !important;
-    line-height: 1 !important;
-    box-shadow: 0 2px 10px rgba(30, 136, 229, 0.3);
-    flex-shrink: 0;
-    text-decoration: none;
-}
-
-.nav-link.nav-highlight::after,
-.nav-highlight::after {
-    display: none !important;
-}
-
-.nav-link.nav-highlight:hover,
-.nav-highlight:hover {
-    background: linear-gradient(135deg, #1e88e5, #0b2545) !important;
-    color: #ffffff !important;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(30, 136, 229, 0.5);
-}
-
-#navbar.scrolled .nav-link.nav-highlight,
-#navbar.scrolled .nav-highlight {
-    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)) !important;
-    color: var(--white) !important;
-    border: none !important;
-}
+/* Nav Highlight Badge removed - Sewa Kontainer page deleted */
 
 /* Nav Highlight Badge - Jual Beli Kapal (Maritime Gold Pill) */
 .nav-link.nav-highlight-gold,
